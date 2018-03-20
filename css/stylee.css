@@ -1,0 +1,8 @@
+/* font awesome */
+@import url('font-awesome.css');
+
+@media(max-device-width:600px){
+    body{
+        background-color: red;
+    }
+}

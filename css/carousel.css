@@ -1,0 +1,152 @@
+.carousel-caption {
+    background-color: transparent;
+    bottom: 300px;
+}
+.carousel-indicators {
+    top:815px;
+    right: 750px;
+}
+.img-responsive{width: 100%;}
+.carousel-indicators .active {
+    background-color: #131212;
+}
+
+.carousel-caption h4,h2{
+    text-align: center;
+}
+#carousel_inner {
+float:left; /* important for inline positioning */
+width:630px; /* important (this width = width of list item(including margin) * items shown */
+overflow: hidden;  /* important (hide the items outside the div) */
+/* non-important styling bellow */
+background: #F0F0F0;
+}
+
+#carousel_ul {
+position:relative;
+left:-210px; /* important (this should be negative number of list items width(including margin) */
+list-style-type: none; /* removing the default styling for unordered list items */
+margin: 0px;
+padding: 0px;
+width:9999px; /* important */
+/* non-important styling bellow */
+padding-bottom:10px;
+}
+
+#carousel_ul li{
+float: left; /* important for inline positioning of the list items */
+width:200px;  /* fixed width, important */
+/* just styling bellow*/
+padding:0px;
+height:110px;
+background: #000000;
+margin-top:10px;
+margin-bottom:10px;
+margin-left:5px;
+margin-right:5px;
+}
+
+#carousel_ul li img {
+.margin-bottom:-4px; /* IE is making a 4px gap bellow an image inside of an anchor (<a href...>) so this is to fix that*/
+/* styling */
+cursor:pointer;
+cursor: hand;
+border:0px;
+}
+#left_scroll, #right_scroll{
+float:left;
+height:130px;
+width:15px;
+background: #C0C0C0;
+}
+#left_scroll img, #right_scroll img{
+/*styling*/
+cursor: pointer;
+cursor: hand;
+}  
+
+.nbs-flexisel-ul {
+    position:relative;
+    height: 500px;
+    width:99999px;
+    margin:0px;
+    padding:0px;
+    list-style-type:none;
+    text-align:center;
+
+}
+
+.nbs-flexisel-inner {
+    position: relative;
+    overflow: hidden;
+    float:left;
+    width:100%;
+
+}
+
+.nbs-flexisel-item {
+    float:left;
+    margin:0px;
+    padding:0px;
+    cursor:pointer;
+    position:relative;
+    line-height:0px;
+}
+.nbs-flexisel-item img {
+    max-width: 100%;
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*** Navigation ***/
+
+.nbs-flexisel-nav-left,
+.nbs-flexisel-nav-right {
+    padding:5px 10px;
+    border-radius:15px;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 4;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #428bca;
+}
+
+.nbs-flexisel-nav-left {
+    left: 10px;
+    opacity: 0.5;
+    font-size: 60px;
+}
+.nbs-flexisel-nav-left:hover {
+
+    opacity: 1.5;
+}
+
+.nbs-flexisel-nav-left:before {
+    content: "<"
+}
+
+.nbs-flexisel-nav-left.disabled {
+    opacity: 0.4;
+}
+
+.nbs-flexisel-nav-right {
+    right: 5px;
+    opacity: 0.5;
+    font-size: 60px;
+}
+.nbs-flexisel-nav-right:hover {
+    opacity: 1.5;
+}
+
+.nbs-flexisel-nav-right:before {
+    content: ">"
+}
+
+.nbs-flexisel-nav-right.disabled {
+    opacity: 0.4;
+}
